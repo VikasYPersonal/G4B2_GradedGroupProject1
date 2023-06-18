@@ -5,21 +5,20 @@ public class SuperDepartment {
 	private String departmentName;
 	private String getTodaysWork;
 	private String getWorkDeadline;
-	private String isTodayAHoliday;
+	private static String isTodayAHoliday = "Today is not a Holiday";
 	
 	
 	public SuperDepartment() {
-		this.departmentName = "Super Depatment";
+		this.departmentName = "Super Department";
 		this.getTodaysWork = "No Work as of now";
 		this.getWorkDeadline = "Nil";
-		this.isTodayAHoliday = "Today is not a holiday";
 	}
 	
 	public SuperDepartment(String departmentName,String getTodaysWork, String getWorkDeadline) {
+		//super();
 		this.departmentName = departmentName;
 		this.getTodaysWork = getTodaysWork;
 		this.getWorkDeadline = getWorkDeadline;
-		this.isTodayAHoliday = "Today is not a Holiday";
 	}
 		
 	public String getDepartmentName() {
@@ -31,8 +30,8 @@ public class SuperDepartment {
 	public String getGetWorkDeadline() {
 		return this.getWorkDeadline;
 	}
-	public String getIsTodayAHoliday() {
-		return this.isTodayAHoliday;
-	}
+	
+	public String getIsTodayAHoliday() { return SuperDepartment.isTodayAHoliday; }
+	 
 	
 }

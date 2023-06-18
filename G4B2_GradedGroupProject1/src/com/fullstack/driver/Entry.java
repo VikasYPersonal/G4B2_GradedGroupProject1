@@ -31,7 +31,7 @@ public class Entry {
 		System.out.println(techDept.getGetTodaysWork());
 		System.out.println(techDept.getGetWorkDeadline());
 		System.out.println(techDept.getTechStackInformation());
-		System.out.println(hrDept.getIsTodayAHoliday());
+		System.out.println(techDept.getIsTodayAHoliday());
 
 	}
 
